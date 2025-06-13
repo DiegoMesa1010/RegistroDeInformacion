@@ -22,7 +22,7 @@ def registrar_rutas(app):
                 data.get("Hr_Final"),
                 data.get("Tiempo_Falla"),
                 data.get("Horómetro"),
-                data.get("Tiempo_de_falla"),
+                data.get("Tipo_de_falla"),
                 data.get("Falla"),
                 data.get("Nombre_Mecanico"),
                 data.get("Diagnostico"),
