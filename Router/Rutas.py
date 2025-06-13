@@ -1,6 +1,9 @@
 from flask import request, jsonify
 
 def registrar_rutas(app):
+    @app.route("/")
+    def home():
+        return jsonify({"message": "¡El backend está corriendo correctamente!"}), 200
 
     @app.route('/enviar-datos', methods=['POST'])
     def enviar_datos():
