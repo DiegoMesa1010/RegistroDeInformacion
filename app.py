@@ -1,6 +1,7 @@
 import os
 import json
 from flask import Flask
+from flask_cors import CORS
 from dotenv import load_dotenv
 import gspread
 from google.oauth2.service_account import Credentials
@@ -11,6 +12,8 @@ load_dotenv()
 
 # Configurar Flask
 app = Flask(__name__)
+# Configurar CORS para permitir todas las origenes
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Configurar Google Sheets
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets']

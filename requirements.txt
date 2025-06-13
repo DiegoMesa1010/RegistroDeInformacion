@@ -4,3 +4,4 @@ gspread==6.2.1
 google-auth==2.40.2
 google-auth-oauthlib==1.2.2
 gunicorn==23.0.0
+Flask-CORS==4.0.0
